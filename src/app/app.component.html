@@ -1,0 +1,19 @@
+<!-- The content below is only a placeholder and can be replaced. -->
+<div style="text-align:center">
+  <!-- <div class="jumbotron"> -->
+  <h1>
+    Welcome  to inspiration Quotes app{{ title }}!
+  </h1>
+  <img width="300" alt="Angular Logo" src="https://pbs.twimg.com/profile_images/721308438576439296/rUfLTlJN_400x400.jpg">
+
+  <P>This application will help  users tocreate quotes and have those quotes voted on whether they are terrible or are inspirational. </P>
+<!-- </div> -->
+  <h1> here are some inspiration Quotes:</h1>
+  <ul>
+      <li *ngFor='let Qt of Quote'>
+        {{Qt.name}}
+      </li>
+  </ul>
+</div>
+<!-- <router-outlet></router-outlet>  -->
+<app-quote></app-quote>
