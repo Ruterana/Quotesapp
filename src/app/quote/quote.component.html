@@ -1,2 +1,13 @@
 <!-- <p>quote works!</p> -->
+<div> 
+<ul>
+   
+    <li *ngFor='let Qt of Quote'>
+        {{Qt.name}}
+        <button (click)='Quote(i)'>Quote details</button>
+    <app-quote-details *ngIf='quote.showAuthor' [Qt]='Qt'></app-quote-details>
+    
+    </li>
+</ul>
+</div>
 
